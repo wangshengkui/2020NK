@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imgv2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="数码管"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn" >
+
+        <com.example.numerica.NewText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="8888"
+            android:textColor="#66C0C0C0"
+            android:textSize="80dp"
+            android:textStyle="bold" />
+
+        <com.example.numerica.NewText
+            android:id="@+id/counterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="0000"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="80dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/toggle_btn"
+            android:text="计数"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/toggle_btn"
+            android:text="停止"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/toggle_btn"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

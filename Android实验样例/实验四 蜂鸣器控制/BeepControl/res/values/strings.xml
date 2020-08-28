@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">蜂鸣器</string>
+    <string name="title">蜂鸣器控制</string>
+    <string name="action_settings">Settings</string>
+    
+	<string name="beep_on">打开蜂鸣器</string>
+	<string name="beep_off">关闭蜂鸣器</string>
+	<string name="exit">退出程序</string>
+	<string name="desc">显示图片</string>
+</resources>

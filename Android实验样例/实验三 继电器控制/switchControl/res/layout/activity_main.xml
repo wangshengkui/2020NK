@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+     <RelativeLayout
+         android:id="@+id/relativeLayout2"
+         android:layout_width="200dp"
+         android:layout_height="260dp"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="150dp">
+         <ImageView
+             android:id="@+id/imgv1"
+             android:layout_width="160dp"
+             android:layout_height="160dp"
+             android:layout_centerInParent="true"
+             android:src="@drawable/open"      
+            />
+       <ToggleButton
+            android:id="@+id/togglebtn1"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+             android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"     
+            android:background="@drawable/toggle_btn_bg_selector" 
+            android:textOff=""
+            android:textOn="" />
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/imgv1"
+             android:layout_marginBottom="10dp"
+             android:layout_alignParentLeft="true"
+             android:gravity="center"
+             android:text="继电器1"
+             android:textSize="22sp" />
+     </RelativeLayout>
+     <RelativeLayout
+         android:id="@+id/relativeLayout1"
+         android:layout_width="200dp"
+         android:layout_height="260dp"
+         android:layout_alignParentRight="true"
+         android:layout_alignTop="@+id/relativeLayout2"
+         android:layout_marginRight="150dp" >
+         <ImageView
+             android:id="@+id/imgv2"
+             android:layout_width="160dp"
+             android:layout_height="160dp"
+             android:layout_centerInParent="true"
+             android:src="@drawable/open"   
+             />
+        <ToggleButton
+            android:id="@+id/togglebtn2"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+             android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"     
+            android:background="@drawable/toggle_btn_bg_selector"              
+            android:textOff=""
+            android:textOn="" />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/imgv2"
+             android:layout_alignParentLeft="true"
+             android:gravity="center"
+             android:text="继电器2"
+             android:layout_marginBottom="10dp"
+             android:textSize="22sp" />
+     </RelativeLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:orientation="vertical"
+         android:padding="10dp" >
+
+         <Button
+             android:id="@+id/button1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignRight="@+id/relativeLayout2"
+             android:layout_marginBottom="10dp"
+             android:background="@drawable/toggle_btn"
+             android:text="全开"
+             android:textColor="#fff" />
+
+         <Button
+             android:id="@+id/button2"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignRight="@+id/relativeLayout2"
+             android:layout_marginBottom="10dp"
+             android:background="@drawable/toggle_btn"
+             android:text="全关"
+             android:textColor="#fff" />
+     </LinearLayout>
+
+</RelativeLayout>

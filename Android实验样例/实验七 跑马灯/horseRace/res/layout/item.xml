@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="跑马灯"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/imgv1"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@drawable/deng_off" />
+
+    <ToggleButton
+        android:id="@+id/togglebtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/toggle_btn_bg_selector"
+        android:textOff=""
+        android:textOn="" />
+
+</LinearLayout>
